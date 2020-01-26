@@ -19,7 +19,7 @@ h1
 
 div
 {
-	padd
+
 }
 
 p
@@ -30,7 +30,7 @@ p
 	background: #C7CAF7;
 	margin-top: 80px;
 	border-bottom: solid 4px #DDD;
-	padding-bottom: 0px;
+	padding-right: 20px;
 	display: flex;
 	flex-direction: row;
   	justify-content: flex-start;
