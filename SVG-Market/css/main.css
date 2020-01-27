@@ -108,6 +108,9 @@ a:hover, a:active
 	margin: 0 auto;
 	height: 800px;
 	width: 1550px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 	padding-left: 8px;
 	padding-right: 8px;
 }
@@ -141,5 +144,19 @@ img {
 
 .selected {
     -webkit-filter:invert(100%);
+    color: green;
+}
+
+.selected::before {
+	content: " \2713";
+}
+
+object {
+	width: 8cm;
+}
+
+/*block mouse events on element children*/
+.wrapper > = {
+	pointer-events: none;
 }
 

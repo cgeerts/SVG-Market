@@ -14,6 +14,11 @@
     theHeading.textContent = "Hope you enjoy! Come again soon!";
   }
 
+  function toggleSelected() {
+    debugger;
+     this.classList.toggle('selected');
+  }
+
   // log the id of the svg to the console when a user hovers on it
   function logSVG() {
     console.log(this.id);
@@ -21,6 +26,7 @@
 
   theButton.addEventListener("click", changeText);
   svgImage.addEventListener("mouseover", logSVG);
+  svgImage.addEventListener("click", toggleSelected);
   //document.querySelector('h1').textContent = "Hello from the console";
 
    const    svgImg1 = document.querySelector('#svgImg1'),
@@ -36,7 +42,6 @@
 
     function logoSVG() {
         this.classList.toggle("selected");
-}
 
     svgImg1.addEventListener("click", logoSVG);
     svgImg2.addEventListener("click", logoSVG);
