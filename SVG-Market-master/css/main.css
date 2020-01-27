@@ -1,0 +1,162 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*reset*/
+
+div,p,body,header,footer,section,article,nav 
+{ 
+	margin: 0; 
+	padding: 0; 
+}	
+
+h1
+{
+	font-family: "Century Gothic", Century Gothic, sans-serif;
+	font-size: 36px;
+	color: #333;
+	background: #E1E3FB;
+}
+
+div
+{
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+  	display:inline-block;
+}
+
+p
+{
+	font-family: "Gill", Gill, Gill, sans-serif;
+	font-size: 24px;
+	color: #333;
+	background: #C7CAF7;
+	margin-top: 80px;
+	border-bottom: solid 4px #DDD;
+	padding-right: 20px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+img 
+{ 
+	border: none;
+	margin: 0px; 
+	padding: 0px;
+	display:inline-block;
+	border-bottom: solid 4px #DDD;
+}
+
+img:hover {
+-webkit-filter:invert(100%);
+}
+
+body 
+{
+	font-family: "Oswald", Oswald, Oswald, sans-serif;
+	font-size: 24px;
+	color: #333;
+	background: #C7CAF7;
+}
+
+button {
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  color: #686EC5;
+  border-color: #9398DF;
+  font-family: "Century Gothic", Century Gothic, sans-serif;
+  font-weight: bold;
+  background-color: #93A7DF;
+  font-size: 20px;
+}
+
+section {
+	color: #333;
+	background: #C7CAF7;
+	margin-top: 0px;
+	padding-bottom: 0px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-left;
+}
+
+a:link, a:visited 
+{ 
+ 	text-decoration: none; 	
+}
+
+a:hover, a:active 
+{ 
+	text-decoration: overline; 
+}
+
+#topBar
+{
+	background-color: #99ccff;
+	height: 20px;
+}
+
+.hidden
+{
+	display: none;
+}
+
+#siteContainer 
+{
+	margin: 0 auto;
+	height: 800px;
+	width: 1550px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+#mainHeader
+{
+	margin-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+	border-bottom: solid 1px #DDD;
+}
+
+#svgImage
+{
+	margin-top: 20px;
+	border-bottom: solid 1px #DDD;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+  	color: #A22121;
+  	background-color: #E7695E;
+}
+
+img {
+    cursor: pointer;
+}
+
+.selected {
+    -webkit-filter:invert(100%);
+    color: green;
+}
+
+.selected::before {
+	content: " \2713";
+}
+
+object {
+	width: 8cm;
+}
+
+/*block mouse events on element children*/
+.wrapper > = {
+	pointer-events: none;
+}
+
