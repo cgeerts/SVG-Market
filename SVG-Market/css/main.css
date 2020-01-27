@@ -19,7 +19,10 @@ h1
 
 div
 {
-
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+  	display:inline-block;
 }
 
 p
@@ -41,6 +44,8 @@ img
 	border: none;
 	margin: 0px; 
 	padding: 0px;
+	display:inline-block;
+	border-bottom: solid 4px #DDD;
 }
 
 img:hover {
@@ -128,5 +133,13 @@ a:hover, a:active
   	justify-content: flex-start;
   	color: #A22121;
   	background-color: #E7695E;
+}
+
+img {
+    cursor: pointer;
+}
+
+.selected {
+    -webkit-filter:invert(100%);
 }
 

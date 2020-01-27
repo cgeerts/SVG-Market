@@ -7,7 +7,7 @@
   // find the button element on the page by its ID with JavaScript
   let theButton = document.querySelector("#myButton"),
       theHeading = document.querySelector('h1'),
-      svgImage = document.querySelector("#svg");
+      svgImage = document.querySelector("#svgImage");
 
   // changes the heading text
   function changeText() {
@@ -36,5 +36,18 @@
 
     function logoSVG() {
         this.classList.toggle("selected");
-    }
+}
+
+    svgImg1.addEventListener("click", logoSVG);
+    svgImg2.addEventListener("click", logoSVG);
+    svgImg3.addEventListener("click", logoSVG);
+    svgImg4.addEventListener("click", logoSVG);
+    svgImg5.addEventListener("click", logoSVG);
+    svgImg6.addEventListener("click", logoSVG);
+    svgImg7.addEventListener("click", logoSVG);
+    svgImg8.addEventListener("click", logoSVG);
+    svgImg9.addEventListener("click", logoSVG);
+    svgImg10.addEventListener("click", logoSVG);
+ }
+
 })();
